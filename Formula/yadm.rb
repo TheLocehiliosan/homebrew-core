@@ -6,14 +6,10 @@ class Yadm < Formula
 
   bottle :unneeded
 
-  option "without-completions", "Disable bash completions"
-
   def install
     bin.install "yadm"
     man1.install "yadm.1"
-    if build.with? "completions"
-      bash_completion.install "completion/yadm.bash_completion"
-    end
+    bash_completion.install "completion/yadm.bash_completion"
   end
 
   test do
