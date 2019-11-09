@@ -7,8 +7,7 @@ class Yadm < Formula
   bottle :unneeded
 
   def install
-    bin.install "yadm"
-    man1.install "yadm.1"
+    system "make", "install", "PREFIX=#{prefix}"
     bash_completion.install "completion/yadm.bash_completion"
     zsh_completion.install  "completion/yadm.zsh_completion" => "_yadm"
   end
