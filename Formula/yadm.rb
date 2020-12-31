@@ -3,7 +3,7 @@ class Yadm < Formula
   homepage "https://yadm.io/"
   url "https://github.com/TheLocehiliosan/yadm/archive/3.0.0.tar.gz"
   sha256 "af968c815817e9de85b60dc9c9a7e6159ed34e4f91ea78cadbcd6c73a0301c06"
-  license "GPL-3.0-only"
+  license "GPL-3.0-or-later"
 
   bottle :unneeded
 
